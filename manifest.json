@@ -1,0 +1,29 @@
+{
+    "name" : "New Tab : Eye Candy",
+    "description" : "Customise your new tab",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "author" : "Abhijnan Vegi",
+
+    "icons" : {
+        "128" : "icons/candy128.png",
+        "64" : "icons/candy64.png",
+        "32" : "icons/candy32.png"
+    },
+
+    "chrome_url_overrides" : {
+        "newtab" : "index.html"
+    },
+
+    "web_accessible_resources": [{
+        "resources" : [ "img/*" , "styles.css" ],
+        "matches" : []
+    }],
+
+    "content_scripts" : [
+        {
+            "js" : ["newtab.js"],
+            "matches" : ["<all_urls>"]
+        }
+    ]
+}

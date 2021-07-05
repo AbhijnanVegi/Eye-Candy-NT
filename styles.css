@@ -1,0 +1,46 @@
+#wall {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    transform: scale(1.02);
+    filter: blur(12px);
+}
+
+.wallpaper-div {
+    padding: 0;
+    overflow: hidden;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    padding-top: 0%;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+#time {
+    font-weight: 700;
+    font-size: 180px;
+    text-shadow: 3px 5px 11px rgb(0 0 0 / 20%);
+}
+
+#date {
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 20%);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+}

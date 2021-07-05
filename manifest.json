@@ -18,12 +18,5 @@
     "web_accessible_resources": [{
         "resources" : [ "img/*" , "styles.css" ],
         "matches" : []
-    }],
-
-    "content_scripts" : [
-        {
-            "js" : ["newtab.js"],
-            "matches" : ["<all_urls>"]
-        }
-    ]
+    }]
 }
